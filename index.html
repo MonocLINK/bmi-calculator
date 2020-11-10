@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BMI Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS, then Self CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container w-75 bg-dark text-light">
+        <header class="text-center p-3">
+            <h1 class="borderSelf">BMI Calculator</h1>
+        </header>
+        <main>
+            <!-- Input -->
+            <form class="form-inline">
+                <div class="col">
+                    <div class="form-group pb-3">
+                        <label for="heightInput">Enter your height (in): &nbsp;</label>
+                        <input type="number" name="heightInput" id="heightInput" class="form-control" placeholder="Height">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group pb-3">
+                        <label for="weightInput">Enter your weight (lbs): &nbsp;</label>
+                        <input type="number" name="weightInput" id="weightInput" class="form-control" placeholder="Weight">
+                    </div>
+                </div>
+            </form>
+
+            <!-- Calculate -->
+            <button type="button" class="btn btn-primary ml-3 mb-3" id="calculateBMI">Calculate BMI</button>
+
+            <!-- Output -->
+            <p class="mb-3 ml-3 mt-3 hidden">Your BMI is <span id="bmiOutput"></span></p>
+
+        </main>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Self JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
